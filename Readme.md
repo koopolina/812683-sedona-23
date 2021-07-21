@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Polina Metlitskaya](https://up.htmlacademy.ru/adaptive/23/user/812683).
-* Наставник: [Евгений Петров]  (https://htmlacademy.ru/profile/id617077).
+* Наставник: [Евгений Петров](https://htmlacademy.ru/profile/id617077).
 
 ---
 
