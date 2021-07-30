@@ -1,0 +1,32 @@
+.advantages {
+  margin-top: 27px;
+}
+
+.advantages__list {
+  margin: 0;
+  margin-bottom: 33px;
+  padding: 0;
+  list-style: none;
+}
+
+.advantages__item:nth-child(1),
+.advantages__item:nth-child(2) {
+  background-color: #81B3D2;
+  padding-top: 35px;
+}
+
+.advantages__item--grey {
+  padding-top: 25px;
+  background-color: #EEEEEE
+}
+
+.advantages__title {
+  margin: 0;
+  padding-bottom: 23px;
+}
+
+.advantages__description {
+  margin: 0;
+  padding-top: 28px;
+  padding-bottom: 39px;
+}

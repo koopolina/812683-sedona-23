@@ -1,0 +1,34 @@
+.gallery {
+  margin-top: 43px;
+  margin-bottom: 48px;
+}
+
+.gallery__list {
+  padding: 0;
+  list-style: none;
+}
+
+.gallery__item {
+  padding-bottom: 39px;
+}
+
+.gallery__title {
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0;
+  padding-bottom: 16px;
+  padding-top: 10px;
+}
+
+.gallery__description {
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+.gallery__number {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 24px;
+}
