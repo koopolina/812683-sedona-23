@@ -1,0 +1,31 @@
+.advantages {
+  margin-top: 27px;
+}
+
+.advantages__list {
+  margin: 0;
+  margin-bottom: 33px;
+  padding: 0;
+  list-style: none;
+}
+
+.advantages__item--blue {
+  background-color: $blue;
+  padding-top: 35px;
+}
+
+.advantages__item--grey {
+  padding-top: 25px;
+  background-color: $light-grey;
+}
+
+.advantages__title {
+  margin: 0;
+  padding-bottom: 23px;
+}
+
+.advantages__description {
+  margin: 0;
+  padding-top: 28px;
+  padding-bottom: 39px;
+}
