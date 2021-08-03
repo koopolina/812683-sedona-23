@@ -6,15 +6,15 @@
 .personality-info {
   border: none;
   padding: 0;
+}
 
-  legend {
-    font-weight: bold;
-    padding-bottom: 19px;
-  }
+.personality-info__legend {
+  font-weight: bold;
+  padding-bottom: 19px;
+}
 
-  label {
-    font-size: 14px;
-  }
+.personality-info__label {
+  font-size: 14px;
 }
 
 .personality-info__item {
@@ -24,15 +24,15 @@
 .contacts-info {
   border: none;
   padding: 0;
+}
 
-  legend {
-    font-weight: bold;
-    padding-bottom: 17px;
-  }
+.contacts-info__legend {
+  font-weight: bold;
+  padding-bottom: 17px;
+}
 
-  label {
-    font-size: 14px;
-  }
+.contacts-info__label {
+  font-size: 14px;
 }
 
 .contacts-info__item {
@@ -42,15 +42,15 @@
 .impress-info {
   border: none;
   padding: 0;
+}
 
-  legend {
-    font-weight: bold;
-    padding-bottom: 25px;
-  }
+.impress-info__legend {
+  font-weight: bold;
+  padding-bottom: 25px;
+}
 
-  label {
-    font-weight: bold;
-  }
+.impress-info__label {
+  font-weight: bold;
 }
 
 .impress-info__radio {
@@ -60,15 +60,15 @@
 .place-info {
   border: none;
   padding: 0;
+}
 
-  legend {
-    font-weight: bold;
-    padding-bottom: 25px;
-  }
+.place-info__legend {
+  font-weight: bold;
+  padding-bottom: 25px;
+}
 
-  label {
-    font-weight: bold;
-  }
+.place-info__label {
+  font-weight: bold;
 }
 
 .place-info__checkbox {
@@ -78,11 +78,11 @@
 .response-info {
   border: none;
   padding: 0;
+}
 
-  legend {
-    font-weight: bold;
-    padding-bottom: 15px;
-  }
+.response-info__legend {
+  font-weight: bold;
+  padding-bottom: 15px;
 }
 
 .response-info__text {

@@ -9,15 +9,14 @@
   list-style: none;
 }
 
-.advantages__item:nth-child(1),
-.advantages__item:nth-child(2) {
-  background-color: #81b3d2;
+.advantages__item--blue {
+  background-color: $blue;
   padding-top: 35px;
 }
 
 .advantages__item--grey {
   padding-top: 25px;
-  background-color: #eeeeee;
+  background-color: $light-grey;
 }
 
 .advantages__title {
