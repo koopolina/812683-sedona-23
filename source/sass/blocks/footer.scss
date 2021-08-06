@@ -14,3 +14,19 @@
 .copyright__text {
   font-size: 14px;
 }
+
+.page-footer__wrapper {
+  // display: grid;
+  // grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 27px 0 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: auto;
+    max-width: 1072px;
+  }
+}

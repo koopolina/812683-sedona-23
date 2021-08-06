@@ -3,3 +3,24 @@
   padding: 0;
   list-style: none;
 }
+
+.main-nav__list a {
+  color: $black;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__wrapper {
+    width: 705px;
+    margin: 0 auto;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__wrapper {
+    width: 1072px;
+  }
+}
