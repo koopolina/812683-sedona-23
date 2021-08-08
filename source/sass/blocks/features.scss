@@ -10,11 +10,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
-
-  @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
 }
 
 .features__item {
