@@ -11,3 +11,14 @@
   margin: 0;
   padding-bottom: 27px;
 }
+
+.booking__wrapper {
+  @media (min-width: $tablet-width) {
+    padding: 0 27px 0 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: auto;
+    max-width: 1072px;
+  }
+}
