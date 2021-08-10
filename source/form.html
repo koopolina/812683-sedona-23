@@ -41,11 +41,13 @@
       </div>
     </nav>
     <section class="about">
-      <img class="about__back" src="img/back-mobile.jpg" width="901" height="389" alt="Фон с горами">
-      <img class="about__back-text" src="img/back-text.svg" width="282" height="214" alt="Добро пожаловать в Седону">
-      <h1 class="about__title">Оставьте свой отзыв</h1>
-      <p class="about__lead">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами
-        достопримечательностях</p>
+      <div class="about__wrapper">
+        <img class="about__back" src="img/back-mobile.jpg" width="901" height="389" alt="Фон с горами">
+        <img class="about__back-text" src="img/back-text.svg" width="282" height="214" alt="Добро пожаловать в Седону">
+        <h1 class="about__title">Оставьте свой отзыв</h1>
+        <p class="about__lead">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами
+          достопримечательностях</p>
+      </div>
     </section>
   </header>
   <main class="form-main">
@@ -86,7 +88,8 @@
           <fieldset class="impress-info">
             <legend class="impress-info__legend">Ваше общее впечатление:</legend>
             <div class="impress-info__radio">
-              <input class="impress-info__input" type="radio" name="grid" value="positive" id="impress-positive" checked>
+              <input class="impress-info__input" type="radio" name="grid" value="positive" id="impress-positive"
+                checked>
               <label class="impress-info__label" for="impress-positive">Скорее положительное</label>
             </div>
             <div class="impress-info__radio">
@@ -125,6 +128,7 @@
             </div>
           </fieldset>
           <button class="feedback__button" type="submit">Отправить отзыв</button>
+          <p class="feedback__required">*-обязательные поля</p>
         </form>
       </div>
     </section>

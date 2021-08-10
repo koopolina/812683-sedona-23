@@ -41,11 +41,13 @@
       </div>
     </nav>
     <section class="about">
-      <img class="about__back" src="img/back-mobile.jpg" width="901" height="389" alt="Фон с горами">
-      <img class="about__back-text" src="img/back-text.svg" width="282" height="214" alt="Добро пожаловать в Седону">
-      <h1 class="about__title">Фото и видео</h1>
-      <p class="about__lead">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и
-        экономике.</p>
+      <div class="about__wrapper">
+        <img class="about__back" src="img/back-mobile.jpg" width="901" height="389" alt="Фон с горами">
+        <img class="about__back-text" src="img/back-text.svg" width="282" height="214" alt="Добро пожаловать в Седону">
+        <h1 class="about__title">Фото и видео</h1>
+        <p class="about__lead">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и
+          экономике.</p>
+      </div>
     </section>
   </header>
   <main class="catalog-main">
@@ -53,26 +55,26 @@
     <section class="gallery">
       <div class="gallery__wrapper">
         <ul class="gallery__list">
-          <li class="gallery__item">
-            <img class="gallery__item-image" src="img/photo1.jpg" width="280" height="280" alt="Фотография заката">
+          <li class="gallery__item gallery__item--one">
+            <img class="gallery__image gallery__image--one" src="img/photo1.jpg" width="280" height="280" alt="Фотография заката">
             <h3 class="gallery__title">Неродные просторы</h3>
             <p class="gallery__description">Автор фото: Борис</p>
             <span class="gallery__number gallery__number--like">1350</span>
           </li>
-          <li class="gallery__item">
-            <img class="gallery__item-image" src="img/photo2.jpg" width="280" height="280" alt="Фотография кактуса">
+          <li class="gallery__item gallery__item--two">
+            <img class="gallery__image gallery__image--two" src="img/photo2.jpg" width="280" height="280" alt="Фотография кактуса">
             <h3 class="gallery__title">Местная растительность</h3>
             <p class="gallery__description">Автор фото: Сергей</p>
             <span class="gallery__number gallery__number--like">143</span>
           </li>
-          <li class="gallery__item">
-            <img class="gallery__item-image" src="img/photo3.jpg" width="280" height="280" alt="Фотография серпантина">
+          <li class="gallery__item gallery__item--three">
+            <img class="gallery__image gallery__image--three" src="img/photo3.jpg" width="280" height="280" alt="Фотография серпантина">
             <h3 class="gallery__title">Дорога на север</h3>
             <p class="gallery__description">Автор фото: Петр</p>
             <span class="gallery__number gallery__number--like">96</span>
           </li>
-          <li class="gallery__item">
-            <img class="gallery__item-image" src="img/photo4.jpg" width="280" height="280" alt="Фотография моста">
+          <li class="gallery__item gallery__item--four">
+            <img class="gallery__image gallery__image--four" src="img/photo4.jpg" width="280" height="280" alt="Фотография моста">
             <h3 class="gallery__title">Мост Дьявола</h3>
             <p class="gallery__description">Автор фото: Антон</p>
             <span class="gallery__number gallery__number--like">254</span>
@@ -83,8 +85,9 @@
     <section class="presentation">
       <div class="presentation__wrapper">
         <h2 class="presentation__title">Все еще сомневаетесь?</h2>
-        <p class="presentation__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-        <img class="presentation__screenshot-image" src="img/video.jpg" width="320" height="201"
+        <p class="presentation__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
+          очередной раз!</p>
+        <img class="presentation__image presentation__image--screen" src="img/video.jpg" width="320" height="201"
           alt="Скриншот из видео">
         <div class="presentation__control">
           <div class="presentation__scale"></div>

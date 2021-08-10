@@ -2,6 +2,16 @@
   margin-bottom: 49px;
 }
 
+.presentation__wrapper {
+  @media (min-width: $tablet-width) {
+    padding: 0 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 240px;
+  }
+}
+
 .presentation__title {
   padding-bottom: 39px;
 }
@@ -13,4 +23,14 @@
 .elements__list {
   list-style: none;
   padding: 0;
+}
+
+.presentation__image--screen {
+  @media (min-width: $tablet-width) {
+    width: 648px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 800px;
+  }
 }
