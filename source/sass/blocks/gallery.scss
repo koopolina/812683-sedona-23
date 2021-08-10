@@ -22,10 +22,10 @@
     grid-template-columns: 1fr 1fr;
   }
 
-  @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
+    @media (min-width: $desktop-width) {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
 }
 
 .gallery__item--one {
@@ -34,7 +34,7 @@
     grid-column-end: 3;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     grid-column-start: 1;
     grid-column-end: 4;
   }
