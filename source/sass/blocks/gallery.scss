@@ -46,14 +46,6 @@
   }
 }
 
-.gallery__image--two,
-.gallery__image--three,
-.gallery__image--four {
-  @media (min-width: $tablet-width) {
-    width: 324px;
-  }
-}
-
 .gallery__item {
   padding-bottom: 39px;
 }
