@@ -1,18 +1,37 @@
 .about__title {
   margin: 0;
-  padding-top: 32px;
-  padding-bottom: 46px;
+  font-size: 18px;
+  line-height: 26px;
+  padding-top: 26px;
+  padding-bottom: 30px;
+  text-align: center;
 }
 
 .about__lead {
   margin: 0;
+  // margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
 }
 
 .about__back {
+  position: relative;
   height: 389px;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     height: 518px;
+  }
+}
+
+.about__back-text {
+  position: absolute;
+  left: calc(50% - 141px);
+  top: 146px;
+
+  @media (min-width: $tablet-width) {
+    height: 350px;
   }
 }
 

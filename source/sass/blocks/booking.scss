@@ -3,13 +3,23 @@
 }
 
 .booking__title {
+  font-size: 21px;
+  line-height: 26px;
   margin: 0;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
+  text-align: center;
 }
 
-.booking__description {
+.booking__text {
   margin: 0;
   padding-bottom: 27px;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.booking__map-image {
+  width: 100%;
 }
 
 .booking__wrapper {

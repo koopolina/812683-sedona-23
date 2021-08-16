@@ -1,6 +1,5 @@
 .page-header {
-  // display: grid;
-  // grid-template-columns: 1fr 1fr;
+  position: relative;
   display: flex;
   flex-direction: column;
   background-color: $white;
@@ -8,8 +7,17 @@
 }
 
 .page-header__logo {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 51px);
+  z-index: 1;
   height: 84px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    left: calc(50% - 50px);
+  }
 
   @media (min-width: $desktop-width) {
     height: 97px;
