@@ -25,8 +25,7 @@
   }
 }
 
-.advantages__item--bridge,
-.advantages__item--city {
+.advantages__item--blue {
   grid-column-start: 1;
   grid-column-end: 4;
   padding-top: 51px;
@@ -34,28 +33,27 @@
   background-color: $blue;
 }
 
-// .advantages__item--bridge {
-//   @media (min-width: $tablet-width) {
-//     display: grid;
-//     grid-template-columns: 1fr 1fr;
-//   }
-// }
+.advantages__city {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 
-// .advantages__item--city {
-//   @media (min-width: $tablet-width) {
-//     display: grid;
-//     grid-template-columns: 1fr 1fr;
-//   }
-// }
+.advantages__bridge {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 
-// .advantages__bridge-image {
-//   @media (min-width: $tablet-width) {
-//     grid-column-start: 1;
-//     grid-column-end: 3;
-//     grid-row-start: 1;
-//     grid-row-end: 6;
-//   }
-// }
+.advantages__bridge--text {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.advantages__bridge--image {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
 
 .advantages__item--grey {
   padding-top: 47px;
