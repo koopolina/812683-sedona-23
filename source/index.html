@@ -13,7 +13,7 @@
     <a class="page-header__logo">
       <img src="img/logotype-mobile.svg" width="102" height="84" alt="Седона">
     </a>
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
@@ -41,10 +41,10 @@
       </div>
     </nav>
     <section class="about">
+      <img class="about__back" src="img/back-mobile.jpg" width="901" height="389" alt="Фон с горами">
+      <img class="about__back-text" src="img/back-text.svg" width="282" height="214" alt="Добро пожаловать в Седону">
       <div class="about__wrapper">
-        <img class="about__back" src="img/back-mobile.jpg" width="901" height="389" alt="Фон с горами">
-        <img class="about__back-text" src="img/back-text.svg" width="282" height="214" alt="Добро пожаловать в Седону">
-        <h1 class="about__title">Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
+        <h1 class="about__title">Седона &#8212 небольшой городок в Аризоне, заслуживающий большего!</h1>
         <p class="about__lead">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
       </div>
     </section>
@@ -55,14 +55,20 @@
       <div class="advantages__wrapper">
         <ol class="advantages__list">
           <li class="advantages__item advantages__item--blue">
-            <h3 class="advantages__title">Настоящий городок</h3>
-            <span class="advantages__number">- №1 -</span>
-            <p class="advantages__description">Седона не аттракицон для туристов, там течет своя жизнь</p>
-            <img class="advantages__city-image" src="img/city.jpg" width="520" height="260" alt="Фото города">
+            <div class="advantages__city">
+              <div class="advantages__city-text">
+                <h3 class="advantages__title">Настоящий городок</h3>
+                <span class="advantages__number">&#8212 №1 &#8212</span>
+                <p class="advantages__description">Седона не аттракицон для туристов, там течет своя жизнь</p>
+              </div>
+              <div class="advantages__city-image">
+                <img class="advantages__image" src="img/city.jpg" width="520" height="260" alt="Фото города">
+              </div>
+            </div>
             <ul class="features__list">
               <li class="features__item features__item--house">
                 <h4 class="features__title">Жилье</h4>
-                <p class="features__description">Рекомендуем пожить в настоящем мотеле, все как в кино</p>
+                <p class="features__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
               </li>
               <li class="features__item features__item--souvenirs">
                 <h4 class="features__title">Сувениры</h4>
@@ -75,24 +81,30 @@
             </ul>
           </li>
           <li class="advantages__item advantages__item--blue">
-            <h3 class="advantages__title">Там есть мост дьявола</h3>
-            <span class="advantages__number">- №2 -</span>
-            <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-            <img class="advantages__bridge-image" src="img/bridge.jpg" width="520" height="260" alt="Фото моста">
+            <div class="advantages__bridge">
+              <div class="advantages__bridge-text">
+                <h3 class="advantages__title">Там есть мост дьявола</h3>
+                <span class="advantages__number">&#8212 №2 &#8212</span>
+                <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+              </div>
+              <div class="advantages__bridge-image">
+                <img class="advantages__image" src="img/bridge.jpg" width="520" height="260" alt="Фото моста">
+              </div>
+            </div>
           </li>
           <li class="advantages__item advantages__item--grey">
             <h3 class="advantages__title">Небольшая площадь</h3>
-            <span class="advantages__number">- №3 -</span>
+            <span class="advantages__number">&#8212 №3 &#8212</span>
             <p class="advantages__description">Все интересные места находятся очень близко</p>
           </li>
           <li class="advantages__item advantages__item--grey">
             <h3 class="advantages__title">Красивая дорога</h3>
-            <span class="advantages__number">- №4 -</span>
+            <span class="advantages__number">&#8212 №4 &#8212</span>
             <p class="advantages__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
           <li class="advantages__item advantages__item--grey">
             <h3 class="advantages__title">Мало туристов</h3>
-            <span class="advantages__number">- №5 -</span>
+            <span class="advantages__number">&#8212 №5 &#8212</span>
             <p class="advantages__description">Большинство едет в Гранд-Каньон и толпится там</p>
           </li>
         </ol>
@@ -104,8 +116,8 @@
         <p class="booking__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
           Седоне</p>
         <a class="booking__search button" href="">Найти гостиницу</a>
-        <img class="booking__map-image" src="img/map-mobile.jpg" width="320" height="350" alt="Карта">
       </div>
+      <img class="booking__map-image" src="img/map-mobile.jpg" width="320" height="350" alt="Карта">
     </section>
   </main>
   <footer class="page-footer">
@@ -134,6 +146,9 @@
       </div>
     </div>
   </footer>
+
+  <script src="js/toggle.js"></script>
+
 </body>
 
 </html>
