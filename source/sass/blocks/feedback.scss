@@ -1,6 +1,14 @@
 .feedback {
   margin-top: 36px;
   margin-bottom: 48px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 97px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 102px;
+  }
 }
 
 .feedback__wrapper {
@@ -9,7 +17,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 160px;
+    margin: auto;
+    max-width: 1072px;
   }
 }
 
@@ -31,11 +40,24 @@
   @media (max-width: $mobile-width-only) {
     display: none;
   }
+
+  @media (min-width: $tablet-width) {
+    text-align: right;
+  }
 }
 
 .personality-info {
   border: none;
   padding: 0;
+  margin-bottom: 46px;
+
+  @media (min-width: $tablet-width) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    padding-left: 80px;
+  }
 }
 
 .personality-info__legend {
@@ -55,10 +77,14 @@
 .contacts-info {
   border: none;
   padding: 0;
+  margin-bottom: 49px;
 
   @media (min-width: $tablet-width) {
     grid-column-start: 1;
     grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    margin-bottom: 51px;
   }
 
   @media (min-width: $desktop-width) {
@@ -70,23 +96,42 @@
   font-size: 21px;
   font-weight: bold;
   padding-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 71px;
+  }
 }
 
 .contacts-info__label {
   font-size: 14px;
+  display: block;
+
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+  }
 }
 
 .contacts-info__item {
   padding-bottom: 20px;
+
+  @media (min-width: $desktop-width) {
+    padding-right: 80px;
+  }
 }
 
 .impress-info {
   border: none;
   padding: 0;
+  margin-bottom: 47px;
 
   @media (min-width: $tablet-width) {
     grid-row-start: 1;
     grid-row-end: 2;
+    margin-bottom: 75px;
   }
 }
 
@@ -103,15 +148,23 @@
 
 .impress-info__radio {
   padding-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 30px;
+  }
 }
 
 .place-info {
   border: none;
   padding: 0;
+  margin-bottom: 51px;
 
   @media (min-width: $tablet-width) {
     grid-column-start: 1;
     grid-column-end: 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 75px;
   }
 
   @media (min-width: $desktop-width) {
@@ -119,27 +172,78 @@
   }
 }
 
+.place-info__checkbox--bridge {
+  @media (min-width: $tablet-width) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+}
+
+.place-info__checkbox--mountain {
+  @media (min-width: $tablet-width) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+}
+
+.place-info__checkbox--park {
+  @media (min-width: $tablet-width) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+}
+
+.place-info__checkbox--rock {
+  @media (min-width: $tablet-width) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+}
+
 .place-info__legend {
   font-size: 21px;
   font-weight: bold;
   padding-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+    padding-bottom: 80px;
+  }
 }
 
 .place-info__label {
   font-weight: bold;
+
+  @media (min-width: $desktop-width) {
+    padding-right: 45px;
+  }
 }
 
 .place-info__checkbox {
   padding-bottom: 34px;
+
+  // @media (min-width: $desktop-width) {
+  //   padding-right: 30px;
+  // }
 }
 
 .response-info {
   border: none;
   padding: 0;
+  margin-bottom: 51px;
 
   @media (min-width: $tablet-width) {
     grid-column-start: 1;
     grid-column-end: 3;
+    margin-bottom: 58px;
   }
 }
 
@@ -150,5 +254,7 @@
 }
 
 .response-info__text {
+  margin: 0;
+  padding: 0;
   padding-bottom: 51px;
 }

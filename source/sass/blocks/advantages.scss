@@ -1,5 +1,13 @@
 .advantages {
-  margin-top: 32px;
+  margin-bottom: 49px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 66px;
+  }
 }
 
 .advantages__wrapper {
@@ -34,32 +42,40 @@
 }
 
 .advantages__city {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .advantages__bridge {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .advantages__text {
-  grid-column-start: 2;
-  grid-column-end: 3;
+  @media (min-width: $tablet-width) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
 }
 
 .advantages__image {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 2;
+  @media (min-width: $tablet-width) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
 }
 
 .advantages__item--grey {
   padding-top: 47px;
   color: $black;
   background-color: $light-grey;
-  margin-bottom: 58px;
+  // margin-bottom: 58px;
 }
 
 .advantages__title {

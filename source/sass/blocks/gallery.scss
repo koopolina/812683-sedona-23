@@ -54,7 +54,7 @@
   font-size: 14px;
   line-height: 24px;
   margin: 0;
-  padding-bottom: 16px;
+  padding-bottom: 13px;
   padding-top: 10px;
 }
 
@@ -69,4 +69,34 @@
   font-size: 14px;
   font-weight: bold;
   line-height: 24px;
+  padding-left: 57px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 30px;
+  }
+}
+
+.gallery__photo-stats {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 30px;
+  }
+}
+
+.gallery__number-like {
+  position: absolute;
+  left: 20px;
+
+  @media (min-width: $tablet-width) {
+    left: -40px;
+  }
+}
+
+.gallery__photo {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    background-color: $palegrey;
+  }
 }

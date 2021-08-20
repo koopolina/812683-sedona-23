@@ -13,7 +13,7 @@
     <a class="page-header__logo">
       <img src="img/logotype-mobile.svg" width="102" height="84" alt="Седона">
     </a>
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
@@ -103,19 +103,19 @@
           </fieldset>
           <fieldset class="place-info">
             <legend class="place-info__legend">Посещенные достопримечательности:</legend>
-            <div class="place-info__checkbox">
+            <div class="place-info__checkbox place-info__checkbox--bridge">
               <input class="place-info__input" type="checkbox" name="bridge" id="place-bridge" checked>
               <label class="place-info__label" for="place-bridge">Мост Дьявола</label>
             </div>
-            <div class="place-info__checkbox">
+            <div class="place-info__checkbox place-info__checkbox--mountain">
               <input class="place-info__input" type="checkbox" name="mountain" id="place-mountain" checked>
               <label class="place-info__label" for="place-mountain">Гора-Колокол</label>
             </div>
-            <div class="place-info__checkbox">
+            <div class="place-info__checkbox place-info__checkbox--park">
               <input class="place-info__input" type="checkbox" name="park" id="place-park" checked>
               <label class="place-info__label" for="place-park">Слайд-парк</label>
             </div>
-            <div class="place-info__checkbox">
+            <div class="place-info__checkbox place-info__checkbox--rock">
               <input class="place-info__input" type="checkbox" name="rock" id="place-rock">
               <label class="place-info__label" for="place-rock">Красные скалы</label>
             </div>
@@ -160,5 +160,7 @@
     </div>
   </footer>
 </body>
+
+<script src="js/toggle.js"></script>
 
 </html>
