@@ -170,8 +170,8 @@
   }
 }
 
-.place__bridge,
-.place__park {
+.place-info__bridge,
+.place-info__park {
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
