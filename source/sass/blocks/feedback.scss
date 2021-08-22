@@ -162,8 +162,6 @@
   @media (min-width: $tablet-width) {
     grid-column-start: 1;
     grid-column-end: 3;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     margin-bottom: 75px;
   }
 
@@ -172,39 +170,12 @@
   }
 }
 
-.place-info__checkbox--bridge {
+.place__bridge,
+.place__park {
   @media (min-width: $tablet-width) {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
-  }
-}
-
-.place-info__checkbox--mountain {
-  @media (min-width: $tablet-width) {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
-  }
-}
-
-.place-info__checkbox--park {
-  @media (min-width: $tablet-width) {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
-  }
-}
-
-.place-info__checkbox--rock {
-  @media (min-width: $tablet-width) {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
   }
 }
 
