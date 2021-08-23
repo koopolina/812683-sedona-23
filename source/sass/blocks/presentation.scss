@@ -1,5 +1,9 @@
 .presentation {
-  margin-bottom: 49px;
+  margin-bottom: 77px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 121px;
+  }
 }
 
 .presentation__wrapper {
@@ -14,15 +18,20 @@
 
 .presentation__title {
   padding-bottom: 39px;
+  text-align: center;
 }
 
 .presentation__description {
   padding-bottom: 33px;
+  text-align: center;
 }
 
 .elements__list {
   list-style: none;
   padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: $palegrey;
 }
 
 .presentation__image--screen {

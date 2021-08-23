@@ -1,3 +1,11 @@
+.about {
+  margin-bottom: 82px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+  }
+}
+
 .about__title {
   margin: 0;
   font-size: 18px;
