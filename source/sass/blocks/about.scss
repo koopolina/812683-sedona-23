@@ -44,6 +44,8 @@
 }
 
 .about__wrapper {
+  padding: 0 33px 0 34px;
+
   @media (min-width: $tablet-width) {
     padding: 0 27px 0 32px;
   }
