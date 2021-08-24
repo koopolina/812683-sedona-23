@@ -6,12 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Седона</title>
   <link href="css/style.css" rel="stylesheet">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/apple.png">
 </head>
 
 <body class="page__body">
   <header class="page-header">
     <a class="page-header__logo">
-      <img src="img/logotype-mobile.svg" width="102" height="84" alt="Седона">
+      <picture>
+        <source media="(min-width: 1280px)" srcset="img/logotype-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+        <img src="img/logotype-mobile.svg" width="102" height="84" alt="Седона">
+      </picture>
     </a>
     <nav class="main-nav main-nav--closed main-nav--nojs">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -41,10 +48,14 @@
       </div>
     </nav>
     <section class="about">
-      <img class="about__back" src="img/back-mobile.jpg" width="901" height="389" alt="Фон с горами">
-      <img class="about__back-text" src="img/back-text.svg" width="282" height="214" alt="Добро пожаловать в Седону">
+      <picture>
+        <source media="(min-width: 1280px)" srcset="img/back-desktop.jpg 1x, img/back-desktop@2x.jpg 2x">
+        <source media="(min-width: 768px)" srcset="img/back-tablet.jpg 1x, img/back-tablet@2x.jpg 2x">
+        <img class="about__back" src="img/back-mobile.jpg" srcset="img/back-mobile@2x.jpg 2x" alt="Фон с горами">
+      </picture>
+      <img class="about__back-text" src="img/text-index.svg" width="282" height="214" alt="Добро пожаловать в Седону">
       <div class="about__wrapper">
-        <h1 class="about__title">Седона &#8212 небольшой городок в Аризоне, заслуживающий большего!</h1>
+        <h1 class="about__title">Седона &#8212 небольшой городок в Аризоне,<br> заслуживающий большего!</h1>
         <p class="about__lead">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
       </div>
     </section>
@@ -62,7 +73,12 @@
                 <p class="advantages__description">Седона не аттракицон для туристов, там течет своя жизнь</p>
               </div>
               <div class="advantages__city-image">
-                <img class="advantages__image" src="img/city.jpg" width="520" height="260" alt="Фото города">
+                <picture>
+                  <source media="(min-width: 1280px)" srcset="img/city-desktop.jpg 1x, img/city-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/city-tablet.jpg 1x, img/city-tablet@2x.jpg 2x">
+                  <img class="advantages__image" src="img/city-mobile.jpg" srcset="img/city-mobile@2x.jpg 2x"
+                    alt="Фото города">
+                </picture>
               </div>
             </div>
             <ul class="features__list">
@@ -88,7 +104,12 @@
                 <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
               </div>
               <div class="advantages__bridge-image">
-                <img class="advantages__image" src="img/bridge.jpg" width="520" height="260" alt="Фото моста">
+                <picture>
+                  <source media="(min-width: 1280px)" srcset="img/bridge-desktop.jpg 1x, img/bridge-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/bridge-tablet.jpg 1x, img/bridge-tablet@2x.jpg 2x">
+                  <img class="advantages__image" src="img/bridge-mobile.jpg" srcset="img/bridge-mobile@2x.jpg 2x"
+                    alt="Фото моста">
+                </picture>
               </div>
             </div>
           </li>
@@ -117,7 +138,11 @@
           Седоне</p>
         <a class="booking__search button" href="">Найти гостиницу</a>
       </div>
-      <img class="booking__map-image" src="img/map-mobile.jpg" width="320" height="350" alt="Карта">
+      <picture>
+        <source media="(min-width: 1280px)" srcset="img/map-desktop.jpg 1x, img/map-desktop@2x.jpg 2x">
+        <source media="(min-width: 768px)" srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x">
+        <img class="booking__map-image" src="img/map-mobile.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Карта">
+      </picture>
     </section>
   </main>
   <footer class="page-footer">

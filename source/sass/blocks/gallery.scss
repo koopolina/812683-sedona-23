@@ -100,3 +100,8 @@
     background-color: $palegrey;
   }
 }
+
+.gallery__image {
+  width: 100%;
+  object-fit: cover;
+}

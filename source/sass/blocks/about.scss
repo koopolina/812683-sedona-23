@@ -36,14 +36,17 @@
 .about__back-text {
   position: absolute;
   left: calc(50% - 141px);
-  top: 146px;
+  top: calc(50% - 200px);
 
   @media (min-width: $tablet-width) {
     height: 350px;
+    top: calc(50% - 295px);
   }
 }
 
 .about__wrapper {
+  padding: 0 33px 0 34px;
+
   @media (min-width: $tablet-width) {
     padding: 0 27px 0 32px;
   }
