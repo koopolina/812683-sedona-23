@@ -6,12 +6,11 @@
 
 .main-nav--opened {
   @media (max-width: $mobile-width-only) {
-    // width: 100%;
+    position: fixed;
+    width: 100%;
+    min-height: 20vh;
     z-index: 1;
     background-color: $blue;
-    min-height: 20vh;
-    // display: block;
-    // position: fixed;
   }
 }
 
