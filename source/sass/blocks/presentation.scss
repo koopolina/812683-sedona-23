@@ -4,11 +4,12 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 45px;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -63,6 +64,11 @@
 .elements__list {
   padding: 0;
   list-style: none;
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding-bottom: 85px;
+  }
 }
 
 .elements__action path {
@@ -78,7 +84,6 @@
     height: 500px;
   }
 }
-
 
 .presentation__control {
   position: relative;
@@ -97,6 +102,9 @@
 
   @media (min-width: $tablet-width) {
     height: 93px;
+    left: 0;
+    right: 0;
+    bottom: 109px;
   }
 }
 
@@ -111,7 +119,7 @@
   opacity: 20%;
 
   @media (min-width: $tablet-width) {
-    top: 47px;
+    top: -56px;
     left: 92px;
     width: calc(100% - 257px);
   }
@@ -127,13 +135,19 @@
   border-radius: 50%;
 
   @media (min-width: $tablet-width) {
-    top: 43px;
-    left: 203px;
+    top: -59px;
+    left: 205px;
   }
 }
 
 .elements__item {
   position: relative;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 1;
+    padding-right: 1;
+    width: 100%;
+  }
 }
 
 .elements__item::after {
@@ -151,19 +165,59 @@
   @media (min-width: $tablet-width) {
     display: none;
   }
+
+  // @media (min-width: $desktop-width) {
+  //   display: block;
+  //   background-color: $white;
+  //   width: 100%;
+  //   right: 0;
+  //   left: 0;
+  //   padding-left: 0;
+  //   padding-right: 0;
+  // }
 }
 
 .elements__action-replay {
   position: absolute;
   left: 14%;
+
+  @media (min-width: $tablet-width) {
+    bottom: 65px;
+    left: 5%;
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: 48px;
+    left: 4%;
+  }
 }
 
 .elements__action-subtitles {
   position: absolute;
-  right: 31%;
+  right: 30%;
+
+  @media (min-width: $tablet-width) {
+    bottom: 65px;
+    right: 14%;
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: 47px;
+    right: 12%;
+  }
 }
 
 .elements__action-fullscreen {
   position: absolute;
   right: 14%;
+
+  @media (min-width: $tablet-width) {
+    bottom: 65px;
+    right: 6%;
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: 47px;
+    right: 5%;
+  }
 }

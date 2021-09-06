@@ -13,7 +13,7 @@
 </head>
 
 <body class="page__body">
-
+<!--
   <svg style="display: none">
     <symbol viewBox="0 0 460 350" fill="none" xmlns="http://www.w3.org/2000/svg" id="text-index-inner">
       <g class="inner-text">
@@ -95,7 +95,7 @@
         d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z"
         fill="black" />
     </symbol>
-  </svg>
+  </svg> -->
 
   <header class="page-header">
     <a class="page-header__logo">
@@ -191,22 +191,22 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a>
+            <a class="main-nav__link">
               Главная
             </a>
           </li>
           <li class="main-nav__item">
-            <a href="">
+            <a class="main-nav__link" href="">
               Фото и видео
             </a>
           </li>
           <li class="main-nav__item">
-            <a href="">
+            <a class="main-nav__link" href="">
               Форма отзыва
             </a>
           </li>
           <li class="main-nav__item">
-            <a href="">
+            <a class="main-nav__link" href="">
               HTML Academy
             </a>
           </li>
@@ -215,13 +215,13 @@
     </nav>
     <section class="about">
       <picture>
-        <source media="(min-width: 1280px)" srcset="img/back-form-desktop.jpg 1x, img/back-form-desktop@2x.jpg 2x">
-        <source media="(min-width: 768px)" srcset="img/back-form-tablet.jpg 1x, img/back-form-tablet@2x.jpg 2x">
-        <img class="about__form-back" src="img/back-form-mobile.jpg" srcset="img/back-form-mobile@2x.jpg 2x"
+        <source media="(min-width: 1280px)" srcset="img/intro-form-desktop.jpg 1x, img/intro-form-desktop@2x.jpg 2x">
+        <source media="(min-width: 768px)" srcset="img/intro-form-tablet.jpg 1x, img/intro-form-tablet@2x.jpg 2x">
+        <img class="about__form-back" src="img/intro-form-mobile.jpg" srcset="img/intro-form-mobile@2x.jpg 2x"
           alt="Фон с горами">
       </picture>
       <svg class="about__form-text" width="230" height="204" role="img" aria-label="Седона">
-        <use xlink:href="#text-index-inner"></use>
+        <use xlink:href="../img/sprites.svg#text-index-inner"></use>
       </svg>
       <div class="about__wrapper">
         <h1 class="about__title about__title--form">Оставьте свой отзыв</h1>
@@ -240,7 +240,7 @@
             <legend class="personality-info__legend">Представьтесь:</legend>
             <div class="personality-info__item">
               <label class="personality-info__label" for="appointment-name">Имя*:</label>
-              <input class="personality-info__input" id="appointment-name" type="text" name="name" placeholder="Петр">
+              <input class="personality-info__input" type="text" id="appointment-name" type="text" name="name" placeholder="Петр">
             </div>
             <div class="personality-info__item">
               <label class="personality-info__label" for="appointment-surname">Фамилия*:</label>
@@ -371,7 +371,7 @@
         <p class="copyright__text">Разработано:</p>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <svg class="copyright__icon-academy" width="27" height="34">
-            <use xlink:href="#icon-academy"></use>
+            <use xlink:href="../img/sprites.svg#icon-academy"></use>
           </svg>
           <!-- <svg class="icon-academy" width="27" height="34" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Логотип Академии">
             <g class="icon-academy-fill">

@@ -189,9 +189,13 @@
   @media (min-width: $tablet-width) {
     left: 5px;
   }
+
+  @media (min-width: $desktop-width) {
+    fill: $white;
+  }
 }
 
-.gallery__number-like path {
+.gallery__number-path {
   @media (min-width: $desktop-width) {
     fill: $white;
   }

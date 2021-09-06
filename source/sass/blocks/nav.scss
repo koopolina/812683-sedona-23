@@ -6,9 +6,12 @@
 
 .main-nav--opened {
   @media (max-width: $mobile-width-only) {
+    // width: 100%;
     z-index: 1;
     background-color: $blue;
     min-height: 20vh;
+    // display: block;
+    // position: fixed;
   }
 }
 
@@ -58,7 +61,7 @@
     content: "";
     position: absolute;
     top: 10px;
-    left: -4px;
+    left: -2px;
     width: 28px;
     height: 4px;
     background-color: $white;
@@ -105,10 +108,10 @@
   }
 }
 
-.main-nav__list a {
+.main-nav__link {
   display: block;
   padding-top: 10px;
-  padding-bottom: 5px;
+  padding-bottom: 4px;
   font-size: 18px;
   font-weight: bold;
   line-height: 40px;
