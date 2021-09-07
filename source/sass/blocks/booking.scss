@@ -33,14 +33,14 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-right: 22%;
+    padding-left: 22%;
     padding-bottom: 39px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 250px;
-    padding-right: 250px;
+    padding-right: 32%;
+    padding-left: 32%;
     padding-bottom: 45px;
   }
 }
@@ -74,6 +74,19 @@
   color: $white;
   text-decoration: none;
   background-color: $blue;
+
+  &:hover {
+    background-color: $hoverblue;
+  }
+
+  &:active {
+    color: rgba($white, 0.3);
+    background-color: $activeblue;
+  }
+
+  &:disabled {
+    background-color: $grey;
+  }
 
   @media (min-width: $tablet-width) {
     width: 458px;

@@ -125,6 +125,17 @@
   border: none;
   box-sizing: border-box;
 
+  &:hover {
+    background-color: $grey;
+  }
+
+  &:focus,
+  &:active {
+    background-color: $white;
+    outline: 4px solid $grey;
+    outline-offset: -5px;
+  }
+
   @media (min-width: $tablet-width) {
     margin-top: 0;
     margin-bottom: 20px;
@@ -369,6 +380,17 @@
   border: none;
   box-sizing: border-box;
 
+  &:hover {
+    background-color: $grey;
+  }
+
+  &:focus,
+  &:active {
+    background-color: $white;
+    outline: 4px solid $grey;
+    outline-offset: -5px;
+  }
+
   @media (min-width: $tablet-width) {
     padding-left: 20px;
   }
@@ -500,6 +522,14 @@
   }
 }
 
+.impress-info__input:hover + .impress-info__label::before {
+  background-color: $grey;
+}
+
+.impress-info__input:active + .impress-info__label::before {
+  background-color: $activegrey;
+}
+
 .impress-info__input + .impress-info__label::before {
   content: "";
   position: absolute;
@@ -509,6 +539,10 @@
   height: 55px;
   background: $palegrey;
   border-radius: 30px;
+}
+
+.impress-info__input:checked:hover + .impress-info__label::before {
+  background-color: $grey;
 }
 
 .impress-info__input:checked + .impress-info__label::before {
@@ -531,6 +565,10 @@
   height: 20px;
   background: $darkgrey;
   border-radius: 20px;
+}
+
+.impress-info__input:checked:active + .impress-info__label::after {
+  background: rgba($darkgrey, 0.3);
 }
 
 .impress-info__radio {
@@ -684,7 +722,34 @@
   }
 }
 
+.place-info__input:hover + .place-info__label::before {
+  background-color: $grey;
+}
+
+.place-info__input:active + .place-info__label::before {
+  background-color: $activegrey;
+}
+
 .place-info__input + .place-info__label::before {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: -1px;
+  width: 55px;
+  height: 55px;
+  background: $palegrey;
+  border-radius: 5%;
+}
+
+.place-info__input:checked:hover + .place-info__label::before {
+  background-color: $grey;
+}
+
+.place-info__input:checked:active + .place-info__label::before {
+  background-color: $activegrey;
+}
+
+.place-info__input:checked + .place-info__label::before {
   content: "";
   position: absolute;
   bottom: -15px;
@@ -698,26 +763,19 @@
 .place-info__input:checked + .place-info__label::after {
   content: "";
   position: absolute;
-  bottom: -15px;
-  left: -1px;
-  width: 55px;
-  height: 55px;
-  background: $palegrey;
-  border-radius: 5%;
-}
-
-.place-info__input:checked + .place-info__label::before {
-  content: "";
-  position: absolute;
-  bottom: 6px;
+  // bottom: 6px;
   left: 15px;
   z-index: 1;
-  width: 23px;
-  height: 16px;
+  width: 55px;
+  height: 55px;
   background-image: url("../img/check.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   border-radius: 5%;
+}
+
+.place-info__input:checked:active + .place-info__label::after {
+  opacity: 30%;
 }
 
 .place-info__checkbox {
@@ -819,6 +877,17 @@
   background-color: $palegrey;
   border: none;
   resize: none;
+
+  &:hover {
+    background-color: $grey;
+  }
+
+  &:focus,
+  &:active {
+    background-color: $white;
+    outline: 4px solid $grey;
+    outline-offset: -5px;
+  }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 4px;

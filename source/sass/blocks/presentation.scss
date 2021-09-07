@@ -64,6 +64,7 @@
 .elements__list {
   padding: 0;
   list-style: none;
+  cursor: pointer;
 
   @media (min-width: $desktop-width) {
     margin: 0;
@@ -74,6 +75,18 @@
 .elements__action path {
   @media (min-width: $tablet-width) {
     fill: $white;
+  }
+}
+
+.elements__action path:hover {
+  @media (max-width: $mobile-width-only) {
+    fill: $darkgrey;
+  }
+}
+
+.elements__action path:active {
+  @media (max-width: $mobile-width-only) {
+    fill: rgba($darkgrey, 0.3);
   }
 }
 
@@ -219,5 +232,21 @@
   @media (min-width: $desktop-width) {
     bottom: 47px;
     right: 5%;
+  }
+}
+
+.elements__action-replay:hover,
+.elements__action-subtitles:hover,
+.elements__action-fullscreen:hover {
+  @media (min-width: $tablet-width) {
+    opacity: 60%;
+  }
+}
+
+.elements__action-replay:active,
+.elements__action-subtitles:active,
+.elements__action-fullscreen:active {
+  @media (min-width: $tablet-width) {
+    opacity: 30%;
   }
 }

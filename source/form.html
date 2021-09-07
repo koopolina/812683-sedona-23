@@ -13,7 +13,7 @@
 </head>
 
 <body class="page__body">
-<!--
+
   <svg style="display: none">
     <symbol viewBox="0 0 460 350" fill="none" xmlns="http://www.w3.org/2000/svg" id="text-index-inner">
       <g class="inner-text">
@@ -89,13 +89,7 @@
           d="M353.4 336.5C353.4 336.2 353.5 335.9 353.6 335.6C353.7 335.3 353.9 335 354.1 334.8C354.3 334.6 354.6 334.4 354.9 334.2C355.2 334.1 355.6 334 356 334C356.5 334 356.9 334.1 357.3 334.3C357.7 334.5 358.1 334.7 358.4 335C358.7 335.3 358.8 335.6 359 336C359.1 336.4 359.2 336.8 359.2 337.3C359.2 338.2 359 338.9 358.7 339.7C358.4 340.4 358 341.1 357.4 341.6C357.2 341.8 356.9 342.1 356.6 342.3C356.3 342.5 356 342.7 355.7 342.8C355.4 342.9 355.2 343.1 355 343.2C354.8 343.3 354.7 343.3 354.6 343.4L353.2 341.4C353.4 341.3 353.7 341.2 354 341C354.3 340.9 354.6 340.7 354.9 340.5C355.2 340.3 355.4 340 355.6 339.7C355.8 339.4 355.9 339.1 355.9 338.7C355.2 338.7 354.7 338.5 354.2 338.1C353.7 337.8 353.4 337.2 353.4 336.5ZM345.6 336.5C345.6 336.2 345.7 335.9 345.8 335.6C345.9 335.3 346.1 335 346.3 334.8C346.5 334.6 346.8 334.4 347.1 334.2C347.4 334.1 347.8 334 348.2 334C348.7 334 349.1 334.1 349.5 334.3C349.9 334.5 350.3 334.7 350.6 335C350.8 335.3 351 335.6 351.2 336C351.3 336.4 351.4 336.8 351.4 337.3C351.4 338.2 351.2 338.9 350.9 339.7C350.6 340.4 350.2 341.1 349.6 341.6C349.4 341.8 349.1 342.1 348.8 342.3C348.5 342.5 348.2 342.7 347.9 342.8C347.6 342.9 347.4 343.1 347.2 343.2C347 343.3 346.9 343.3 346.8 343.4L345.4 341.4C345.7 341.3 345.9 341.2 346.2 341C346.5 340.9 346.8 340.7 347.1 340.5C347.4 340.3 347.6 340 347.8 339.7C348 339.4 348.1 339.1 348.1 338.7C347.4 338.7 346.9 338.5 346.4 338.1C345.8 337.8 345.6 337.2 345.6 336.5Z"
           fill="white" />
       </g>
-    </symbol>
-    <symbol xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 27 35" id="icon-academy">
-      <path
-        d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z"
-        fill="black" />
-    </symbol>
-  </svg> -->
+  </svg>
 
   <header class="page-header">
     <a class="page-header__logo">
@@ -221,7 +215,7 @@
           alt="Фон с горами">
       </picture>
       <svg class="about__form-text" width="230" height="204" role="img" aria-label="Седона">
-        <use xlink:href="../img/sprites.svg#text-index-inner"></use>
+        <use xlink:href="#text-index-inner"></use>
       </svg>
       <div class="about__wrapper">
         <h1 class="about__title about__title--form">Оставьте свой отзыв</h1>
@@ -240,7 +234,7 @@
             <legend class="personality-info__legend">Представьтесь:</legend>
             <div class="personality-info__item">
               <label class="personality-info__label" for="appointment-name">Имя*:</label>
-              <input class="personality-info__input" type="text" id="appointment-name" type="text" name="name" placeholder="Петр">
+              <input class="personality-info__input" id="appointment-name" type="text" name="name" placeholder="Петр">
             </div>
             <div class="personality-info__item">
               <label class="personality-info__label" for="appointment-surname">Фамилия*:</label>
@@ -337,7 +331,7 @@
               <span class="visually-hidden">Твиттер</span>
               <svg role="img" aria-label="Логотип Твиттер" width="18" height="15" viewBox="0 0 18 15" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
-                <path
+                <path class="social__path"
                   d="M11.3 0.166728C13 -0.333272 14.4 0.366728 15 1.26673C15.7 1.06673 16.4 0.766728 17.1 0.566728C17.1 1.36673 16.6 2.06673 16.2 2.26673C16.9 2.46673 17.5 1.76673 17.5 1.76673C17.3 2.76673 16.5 3.46673 15.9 3.76673C15.7 10.3667 12.6 14.7667 5.5 14.5667C5 14.5667 5.6 14.5667 5 14.5667C4.6 14.5667 0.7 14.1667 0 12.7667C2.3 12.9667 4 12.3667 4.8 11.6667C3.8 11.3667 2 11.1667 1.7 8.76673C2.1 8.86673 2.3 8.96673 3 8.86673C1.8 8.06673 0.4 7.36673 0.5 5.16673C0.8 5.46673 1.6 5.66673 1.9 5.66673C1.2 5.46673 -0.1 2.36673 1 0.866728C2.9 2.66673 4.8 4.36673 8.4 4.56673C8.5 2.26673 9.5 0.766728 11.3 0.166728Z"
                   fill="white" />
               </svg>
@@ -348,7 +342,7 @@
               <span class="visually-hidden">Фейсбук</span>
               <svg role="img" aria-label="Логотип Фейсбук" width="9" height="19" viewBox="0 0 9 19" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
-                <path
+                <path class="social__path"
                   d="M6.3 3.4C7.1 3.4 7.9 3.4 8.7 3.4C8.7 2.3 8.7 1.2 8.7 0C7.7 0 6.8 0 5.8 0C2.7 0.2 1.5 2.4 1.9 6.1H0V9.6H2C2 12.7 2 15.8 2 18.9C3.3 18.9 4.6 18.9 5.8 18.9C5.8 15.8 5.8 12.7 5.8 9.6H8.7V6.1H5.8C5.8 5.1 5.8 3.7 6.3 3.4Z"
                   fill="white" />
               </svg>
@@ -359,7 +353,7 @@
               <span class="visually-hidden">Ютуб</span>
               <svg role="img" aria-label="Логотип Ютуб" width="20" height="14" viewBox="0 0 20 14" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
-                <path
+                <path class="social__path"
                   d="M17.1 0H2.8C1.3 0 0 1.3 0 2.8V11.1C0 12.7 1.3 14 2.8 14H17.1C18.7 14 19.9 12.7 19.9 11.2V2.8C20 1.3 18.7 0 17.1 0ZM7 10.4V3.6L13.8 7L7 10.4Z"
                   fill="white" />
               </svg>
@@ -373,12 +367,6 @@
           <svg class="copyright__icon-academy" width="27" height="34">
             <use xlink:href="../img/sprites.svg#icon-academy"></use>
           </svg>
-          <!-- <svg class="icon-academy" width="27" height="34" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Логотип Академии">
-            <g class="icon-academy-fill">
-            <path fill="#2E368F"
-            d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z" />
-          </g>
-          </svg> -->
         </a>
       </div>
     </div>
