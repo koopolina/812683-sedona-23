@@ -8,10 +8,8 @@
 
 .logo {
   position: absolute;
-  // top: -16px;
   left: calc(50% - 95px);
   z-index: 1;
-  // height: 84px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
@@ -39,21 +37,3 @@
     display: block;
   }
 }
-
-// .logo__bridge {
-//   display: none;
-// }
-
-// .page-header__logo::before {
-//   @media (min-width: $desktop-width) {
-//     content: "";
-//     position: absolute;
-//     z-index: -1;
-//     left: -49px;
-//     width: 0;
-//     height: 0;
-//     border-left: 100px solid transparent;
-//     border-right: 100px solid transparent;
-//     border-top: 100px solid $blue;
-//   }
-// }

@@ -5,7 +5,6 @@
   list-style: none;
   background-color: $white;
   text-align: left;
-  // padding-top: 267px;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -108,12 +107,10 @@
   padding-bottom: 3px;
 
   @media (min-width: $tablet-width) {
-    // padding-right: 37px;
     padding-bottom: 8px;
     padding-left: 3px;
     font-size: 21px;
     text-align: center;
-    // padding-left: 50px;
   }
 
   @media (min-width: $desktop-width) {
