@@ -915,19 +915,30 @@
   width: 280px;
   margin: 0;
   padding-top: 19px;
-  // padding-right: 32px;
   padding-bottom: 13px;
-  // padding-left: 32px;
   font-family: $font-stack;
   font-size: 21px;
   line-height: 26px;
-  // font-weight: bold;
   text-align: center;
   text-transform: uppercase;
   color: $white;
   text-decoration: none;
   background-color: $blue;
   border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $hoverblue;
+  }
+
+  &:active {
+    color: rgba($white, 0.3);
+    background-color: $activeblue;
+  }
+
+  &:disabled {
+    background-color: $grey;
+  }
 
   @media (min-width: $tablet-width) {
     grid-row-start: 5;

@@ -1,0 +1,15 @@
+.modal--show {
+  display: block;
+}
+
+.modal {
+  position: fixed;
+  top: 80px;
+  left: calc(50% - 480px);
+  z-index: 1;
+  display: none;
+  width: 320px;
+  height: 380px;
+  background-color: $white;
+  box-shadow: 0 7px 15px rgba($black, 0.15);
+}

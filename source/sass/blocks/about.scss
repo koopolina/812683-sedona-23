@@ -52,6 +52,10 @@
   @media (min-width: $tablet-width) {
     height: 518px;
   }
+
+  @media (min-width: $desktop-width) {
+    box-shadow: 0 7px 15px rgba($black, 0.15);
+  }
 }
 
 // .about__title::after {
