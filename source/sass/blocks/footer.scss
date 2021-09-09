@@ -1,36 +1,151 @@
 .page-footer__hashtag {
   margin-bottom: 34px;
-  padding-top: 28;
+  padding-right: 4px;
+}
+
+.page-footer__link {
+  font-size: 21px;
   font-weight: bold;
+  color: $black;
+  text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 10px;
+  }
 }
 
 .social__list {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 36px;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 43px;
   padding: 0;
   list-style: none;
-}
 
-.copyright__text {
-  font-size: 14px;
+  @media (min-width: $tablet-width) {
+    padding-right: 10px;
+  }
 }
 
 .page-footer__wrapper {
-  padding: 0 84px 0 85px;
+  padding: 32px 84px 0 85px;
 
   @media (min-width: $tablet-width) {
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    padding: 0 27px 0 32px;
+    padding: 32px 61px 0 48px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: auto;
-    max-width: 1072px;
+    padding-left: 110px;
+    padding-right: 120px;
+    padding-top: 30px;
+    background-color: $white;
   }
 }
 
 .copyright {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+}
+
+.copyright__text {
+  margin: 0;
+  font-size: 14px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 40px;
+  }
+}
+
+.copyright__icon-academy {
+  padding-top: 5px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 35px;
+  }
+}
+
+.copyright__path {
+  display: none;
+}
+
+.social__item {
+  position: relative;
+  z-index: 1;
+  padding-top: 9px;
+}
+
+.social__link--twitter::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: -18px;
+  top: -6px;
+  width: 46px;
+  height: 48px;
+  background-color: $blue;
+}
+
+.social__link--twitter:hover::after {
+  background-color: $hoverblue;
+}
+
+.social__link--twitter:active::after {
+  background-color: $activeblue;
+}
+
+.social__link--facebook::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: -18px;
+  top: -5px;
+  width: 46px;
+  height: 48px;
+  background-color: $blue;
+}
+
+.social__link--facebook:hover::after {
+  background-color: $hoverblue;
+}
+
+.social__link--facebook:active::after {
+  background-color: $activeblue;
+}
+
+.social__link--youtube::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: -11px;
+  top: -6px;
+  width: 46px;
+  height: 48px;
+  background-color: $blue;
+}
+
+.social__link--youtube:hover::after {
+  background-color: $hoverblue;
+}
+
+.social__link--youtube:active::after {
+  background-color: $activeblue;
+}
+
+.social__path:active {
+  fill: rgba($white, 0.3);
+}
+
+.copyright__icon-academy:hover {
+  fill: $blue;
+}
+
+.copyright__icon-academy:active {
+  fill: rgba($black, 0.3);
 }

@@ -4,11 +4,13 @@
   background-color: $white;
 }
 
-.main-nav--opened {
+.main-nav__list--opened {
   @media (max-width: $mobile-width-only) {
-    z-index: 1;
-    background-color: $blue;
+    position: absolute;
+    width: 100%;
     min-height: 20vh;
+    z-index: 1;
+    // background-color: $blue;
   }
 }
 
@@ -58,7 +60,7 @@
     content: "";
     position: absolute;
     top: 10px;
-    left: -4px;
+    left: -2px;
     width: 28px;
     height: 4px;
     background-color: $white;
@@ -93,19 +95,19 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    // width: 690px;
     flex-grow: 1;
+    padding-top: 5px;
   }
 
-  // @media (min-width: $desktop-width) {
-  //   width: 1038px;
-  // }
+  @media (min-width: $desktop-width) {
+    padding-top: 6px;
+  }
 }
 
-.main-nav__list a {
+.main-nav__link {
   display: block;
   padding-top: 10px;
-  padding-bottom: 5px;
+  padding-bottom: 4px;
   font-size: 18px;
   font-weight: bold;
   line-height: 40px;
@@ -158,37 +160,41 @@
 }
 
 @media (min-width: $tablet-width) {
-  // .main-nav__wrapper {
-  //   width: 709px;
-  //   margin: 0 auto;
-  // }
-
   .main-nav__toggle {
     display: none;
   }
 }
 
-// @media (min-width: $desktop-width) {
-//   .main-nav__wrapper {
-//     width: 1072px;
-//     margin: 0 auto;
-//   }
-// }
-
 .main-nav__item {
+  background-color: $blue;
+
   @media (min-width: $tablet-width) {
     width: 152px;
+    background-color: $white;
 
     &:nth-child(2) {
       margin-right: 157px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    width: 238px;
+
+    &:nth-child(2) {
+      margin-right: 243px;
+    }
+  }
 }
 
-// .main-nav__wrapper {
-//   @media (min-width: $tablet-width) {
-//     width: 90%;
-//     max-width: 960;
-//     margin: 0 auto;
-//   }
-// }
+.main-nav__item .main-nav__link--current {
+  @media (min-width: $tablet-width) {
+    color: $brown;
+  }
+}
+
+.main-nav__item:last-child {
+  @media (max-width: $mobile-width-only) {
+    // background: linear-gradient(0deg, rgba($darkgrey, 0.7) 1%, rgba($blue,1) 15%);
+    box-shadow: 0 -5px 10px -5px rgba($darkgrey, 1) inset;
+  }
+}

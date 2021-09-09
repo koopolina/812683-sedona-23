@@ -14,33 +14,64 @@
 <body class="page__body">
   <header class="page-header">
     <a class="page-header__logo">
-      <picture>
-        <source media="(min-width: 1280px)" srcset="img/logotype-desktop.svg">
-        <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
-        <img src="img/logotype-mobile.svg" width="102" height="84" alt="Седона">
-      </picture>
+      <svg class="logo" width="190" height="95" viewBox="0 0 187 97" xmlns="http://www.w3.org/2000/svg" role="img"
+        aria-label="Седона">
+        <g class="logo__outline">
+          <path d="M186.6 0H0l80.5 90.5c7.1 7.9 18.6 7.9 25.7 0L186.6 0Z" fill="#81B3D3" />
+        </g>
+        <path d="m43.2.7 49.6 58.4 49.3-58L43.2.7Z" fill="#23A9E1" />
+        <g class="logo__clouds">
+          <path
+            d="M122 17.3c-5.1 0-10.1.1-15.2.1 6-6.9 8.7-6.2 15.2-.1ZM80.8 22.7h26.7c-2-1.2-6.7-7.1-9.3-4.9-.2.2-7.5-8.9-12.3-4.5-4.2 3.8-6.1-.5-10.9 2.5-5.3 3.6 3.2 5.7 5.8 6.9Z"
+            fill="#fff" />
+        </g>
+        <g class="logo__bridge">
+          <path
+            d="M93.1 0H42.2v22.5L92.8 84l.3-.4 50.7-60.4V0H93.1ZM54.9 1.8h5.5V19l-5.5-6.5V1.8Zm-.8 9.8-5-5.9V1.8h5v9.8Zm19.3-2.7-5.7-7.1h5.7v7.1Zm-6.6 3.8L61.2 1.8h5.6v10.9Zm-5.7-9.3 5.5 10.7c-2.8 2.1-4.7 4-5.5 4.9V3.4Zm6.5-.5 5.6 6.9a42.13 42.13 0 0 0-5.6 3.7V2.9Zm6.6-.2L79 6.9c-1.7.7-3.3 1.5-4.8 2.3V2.7Zm5.6 3.9-5.4-4.8h6v4.6c-.3 0-.4.1-.6.2Zm19.1-4.8h5l-5 2.4V1.8Zm-5.8 0h4.4l-4.4 2.1V1.8Zm-.9 2-4.2-2h4.2v2Zm-5.5.5-5.1-2.5h5.1v2.5Zm-5.6-1.9 4.7 2.3c-1.6.4-3.2.8-4.7 1.3V2.4Zm6.4 0L90.9 4c-1.2.1-2.3.2-3.5.4v-2h.1Zm10.4.1v1.9c-1.1-.2-2.2-.3-3.4-.4l3.4-1.5Zm6.5-.1v3.7c-1.5-.5-3.1-1-4.8-1.4l4.8-2.3Zm.7-.6h5.9l-5.4 4.8c-.2-.1-.3-.1-.5-.2V1.8Zm13.6 0h5.6l-5.6 10.9V1.8Zm-6.6 0h5.7l-5.7 7v-7Zm-.8.9v6.5c-1.5-.8-3.1-1.6-4.8-2.3l4.8-4.2Zm6.6.2v10.5c-.7-.5-1.5-1-2.3-1.6-1-.7-2.2-1.4-3.4-2.1l5.7-6.8Zm6.4.5v15.2c-1.1-1-2.9-2.7-5.5-4.6l5.5-10.6Zm.8 16V1.8h5.5v11.4l-5.5 6.2c.1.1 0 .1 0 0Zm6.3-17.6h5v4.7l-5 5.8V1.8Zm-83 0v2.9l-2.5-2.9h2.5ZM61.2 20l.1.1s3.6-3.9 9.2-7.6C75.8 9 83.8 4.9 92.8 5c8.9 0 17.1 4.2 22.3 7.7 5.6 3.7 9.3 7.5 9.4 7.6l-3.9 4.5c-6.9.9-11.9 6.1-18.6 5-3.4-.6-3.5-2.5-4.5-4.5-.7-1.5-1.9-1.3-3.5-1.9-1.4-.6-2.3-1.7-5.2-1.1-2.5.6-2.8 4.5-6 4.3-1.7-.1-1.8-2.5-4.2-5.5-6.3-7.6-12.2-6.5-16.2.5l30.3 35.9L61.2 20Zm75.9-14.5V1.8h3.2l-3.2 3.7Z"
+            fill="#491213" />
+        </g>
+        <g>
+          <path d="m88.7 70.9 4.1-6.5 4 6.5-4 6.5-4.1-6.5Z" fill="#23A9E1" />
+          <path
+            d="M65.5 32.3c.5.6.9 1.3.8 2.1-.1.6-.9 1.6-.3 1.8l2.2-2.8c-.6-.2-5.4-5.8-5.4-6.5-1.1.6-2.1 1.2-3.2 1.7.2.7 1.3 0 1.9 0 .8.1 1.4.6 2 1.2-1.7 1.4-5.9 5-6.4 5.1-.2 0-1.1-.6-1.1-.1 0 .3.9 1 1 1.2.7.9 1.5 1.8 2.2 2.7.6-.3-.1-.7.2-1.2.3-.4 4.9-4.3 6.1-5.2ZM60.2 25.3c.4-.1.6.4 1-.1-.8-1-1.6-1.9-2.4-2.9-.4-.4-.8-.9-.7 0 .1.6-6.1 5.7-6.5 5.8-.5.2-.8-.4-1.1.1.7.9 1.5 1.7 2.2 2.6.2.3.5.6.7.9.3.3.2-.7.2-.6-.1-.5.5-.9.9-1.2 1.5-1.3 5.3-4.6 5.7-4.6ZM51.4 24.4c-1.8.5-3.7-.2-4.2-2s.6-3.8 2.1-4.8c1.4-1 3.6-1 4.4.8.3.8.2 1.7-.1 2.5-.2.5-.6 1 .1 1.3.9-1.1 1.7-2.2 2.6-3.3-1.1-.6-1.5-1.7-2.3-2.6-.9-1.1-2.1-2.1-3.5-2.3-2.9-.4-5.6 2.6-5.8 5.2-.1 1.5.4 2.8 1.2 4 .8 1 1.9 1.6 2.4 2.8.3.1 2.7-1 3.3-1.3-.1-.1-.1-.2-.2-.3-.7.2 0 0 0 0ZM90.7 60.8c-1.2-.8-4-4.7-4.6-5.3-.1-.1-.2-.3-.3-.4 0 0-.3.2-.2.2-.2.1.1.6-.1.9-.8 1.2-5.8 5-6 5.2-.6.4-1.2-.2-1.5.3.7.9 2.8 3.5 3 3.6.5.1.1-.8.2-1 .1-.4 2.6-2.4 3.5-3.2.3-.3.7.4.9.7.3.5.5 1 .3 1.6-.1.4-.7.9-.3 1.2.6-.7 2.4-2.8 2.6-3 .3-.3-.6 0-.5-.1-.4.2-.7.2-1.1 0-.1-.1-1.1-1.1-1-1.2.4-.4 1-1 1.5-1.1.9-.2 1.6 1.5 1.7 2.1.1.6.1 1.2-.1 1.8-.1.4-.5.7 0 .9.7-1 1.4-1.9 2.1-2.9.2-.2 0-.3-.1-.3-.1-.1.2 0 0 0ZM80.5 56.6c2.2-1.9 2.5-5.1.8-7.3-1.9-2.5-5.4-3.1-7.8-1.1-2.2 1.9-2.5 5-.8 7.3 2 2.7 5.2 3 7.8 1.1 1.2-.9-.1.1 0 0Zm-.5-4.7a7.4 7.4 0 0 1-3.7 3.7c-1.8.7-3.1-.8-2.4-2.6.7-1.5 2.2-3.1 3.7-3.7 1.9-.7 3.1.9 2.4 2.6-.4.9.1-.2 0 0ZM74.1 42c.5.1.9.5 1.3 0-.7-.9-1.5-1.8-2.2-2.6-.6.3 0 .5-.2 1-.2.4-2.6.8-3.2.9.2-.6.9-2.6 1.2-2.8.5-.4.9.4 1.3-.1l-2.7-3.3c-.3-.4-.6-1-1-.7 0 0 0 1.5-.1 1.7-.1.2-.9 3.6-1.9 4.5-.5.4-2.2 1.9-2.7 2.1-.5.2-.8-.6-1.2 0 .8 1 1.7 2 2.5 3 .1.1.6.9.8.9.5.1.1-.9.1-1.1.2-.4 2.5-2.7 3.5-2.9 1.2-.2 3-.7 4.5-.6.3.1-.4 0 0 0Z"
+            fill="#fff" />
+          <path
+            d="M67.8 22.9c-4-.2-2.4-4 .4-4.8 2.6-.8 8.1 1.7 9.8 3.4-2.8.9-6.4.7-9.4.9-.2-3.2-1-2.1-.8.5ZM77.3 35.4c-8.6-.1-2.8-13.3.1-12.5 3.4 1.1 3 12.6-.1 12.5ZM83.4 31.1c-.8 2.5-2.4 3-2.2-.1.2-3.5 2.5-2.7 4.9-4 2-1.1 3.1-5.2 6.6-2.8 1.6 1.1 3.4.2 3.9 1.8 0-.1-4.5 10.3-2 10.3-5 0-2.8-5.9-.9-9.9-1.8.9-4.8 6.7-2.4 7.6-1.3 1.7-5.2 3.9-7.2 2.3-1.5-1.1-.7-3.2-.7-5.2ZM87.5 40.7c-3.5 1-8.1-1.2-2.5-2.3 3.5-.7 7.2.7 2.5 2.3.1 0-.1 0 0 0ZM91.9 40.6c-.7-1.7.6-3.6 2.7-2.2 1.8 1.2-.9 3.1-2.7 2.2ZM88.9 45.2c-2.4-.7-10.5-.6-5.2-2.8 1.7-.6 10.2.2 5.2 2.8ZM99.4 48.5c-1.4-1.2-2.9-1.3-4.2 0-1.8-3.3-8.3-2.2-11.4-2.7 1.6 4.1 14.8 4.9 15.6 2.7ZM97.5 51c-3.2-.1-6.7-.6-9.6.1 1.9.5 6.4 1.8 2.2 2.9 1.5 2.2 4 2 5.6.1-.7-.3-1-.7-1.6-1.1 1.6-.3 3.2-1.2 3.4-2ZM101.1 47.1c-5.3-3.1-4-5.4.4-7.6 2.3-1.1 7.3-5.2 9.4-3.9-3.3 3.9-6.6 7.7-9.8 11.5Z"
+            fill="#DC6243" />
+          <path
+            d="M97.3 39.8c-4.5-4.6 6.7-4.2 8.5-5.8 1.3.4 10.8-8.3 13.1-7.7-1.7 1.9-5.2 8.1-7.8 8.1-2 0-4-.3-5.5 1.1-2.2 2.1-5.9 3.1-8.3 4.3Z"
+            fill="#F49774" />
+          <path d="M98.8 34.2c-2.5 1.3-4.8-3.9-.5-3.4 2.8.3 5.7-.2 8.3.2-2 2.3-4.7 3.6-7.8 3.2Z" fill="#F4B1A4" />
+          <path
+            d="M111.4 52.5c.2.6.3 1.3.2 2-.1.9-1 2.9-2.2 2.3-1.2-.6-2.2-1.7-3.2-2.6.8-.9 1.5-1.7 2.9-1.3.4.1.7 0 .3-.3-.4-.2-3.1-2-3.3-1.8-.3.3.5.9.2 1.5-.2.4-.6.8-.9 1.2-.7-.6-1.9-1.3-1.1-2.3.5-.7 1.3-1.2 2.1-1.3.6-.1 1.8.4 2-.2-1.1-.5-2.2-1-3.3-1.6.2.8-3.3 4.5-4.1 5.5-.1.1-.7.6-.7.8 0 .4.6.1.7.1.5-.2 6.8 5.1 7 5.5.1.3-.2.6 0 .7 0 0 .2.2.3.2.4-.5 4.5-6 5.4-6.2-.8-1.2-1.6-2.4-2.4-3.7-.6.3 0 1 .1 1.5ZM105.2 59.2c-2.1-1.3-5.6 1.3-6.1 1.5-1 .5-1.8-.5-1.3-1.5.5-.8 1.4-1.2 2.3-1.3.3 0 1.3.2 1.5 0 .1-.2.2-.2 0-.3-.9-.6-1.7-1.2-2.6-1.7-.2 1.1-1.4 1.7-2.1 2.4-.8.9-1.5 1.9-1.5 3.2 0 1.1.7 2.1 1.7 2.7 1.1.6 2.3.1 3.3-.5.6-.4 1.3-.9 1.9-1.2 1-.5 2.3-.1 2 1.3-.3 1.1-1.4 2.1-2.4 2.3-.6.2-1.3.1-1.9-.1-.4-.1-1-.7-1.2-.1 1.2.8 2.3 1.7 3.5 2.5.1-.8.5-1.1 1.1-1.6.7-.6 1.4-1.3 2-2.1 1.2-1.7 1.6-4.1-.2-5.5ZM105.2 59.2c1 .6-.6-.5 0 0ZM141.9 19.6c-.7.7-8.4-2.3-9-2.8-.3-.1-.3-1.3-.7-.8l-1.2 1.5c-.4.5-.8 1-1.3 1.5-.3.3-.5.5 0 .7.8-.4 5.4 7.3 5 8.5-.7.4-6.9-5.1-7.1-5.4-.1-.1.3-1-.2-.9-.2 0-.7.9-.9 1.1-.3.4-.6.7-.9 1.1.3.5.5 0 1 0 .4.1 1.8 1.3 2.2 1.7-.7 0-2.7.1-2.9.1-.9.1-.4-.7-1-.9-.8.9-1.5 1.8-2.3 2.8l-1.3 1.6c-.1.1 0 0 0 .1.3.3.1.2.6 0s6.6 4.9 6.8 5.2c.4.4-.2 1 .4 1.2.6-.7 1.2-1.5 1.8-2.2.1-.1.1-.1 0-.2-.4-.4-.5.2-1 .2-.5-.1-4.4-3.4-5.9-4.6 1.8-.1 7.3-.3 8.2-.3.3 0 1.1.9 1.1 1.2-.1.4-.5.6.1.8.5-.6 1-1.1 1.5-1.7l.2-.3c.1-.1.1-.1.2-.3l.2-.2c.4-.5 1.8-2 1.6-2.1-.5-.4-.7.5-1.3-.1-.3-.2-1.2-1.8-1.4-2.2-.3-.4.6-.9 1-1.1.8-.5 3.2-1.2 3.5.3 0 .3-.3.5-.1.7 0 0 .2.2.3.2.2-.2 2.4-2.8 3.3-4-.3-.2-.4-.3-.5-.4Zm-7.4 2.2c.1 0 .2-.1 0 0a7 7 0 0 0-1 .8c-.5-.9-1-1.8-1.6-2.7 1.2.5 2.4 1 3.5 1.5-.2.1-.5.2-.9.4ZM124.8 33c-2.4-2-5.6-1.4-7.6.8-1.9 2.3-1.7 5.7.6 7.6 2.3 1.9 5.7 1.4 7.6-.8 1.9-2.3 1.8-5.7-.6-7.6Zm-.3 6.6s0 .1 0 0c-1.3 1.3-3.4.1-4.5-.7-1.1-.8-3.1-2.6-1.9-4.1 1.1-1.3 3.1-.2 4.2.5 1.2.8 3.4 2.6 2.3 4.2l-.1.1Z"
+            fill="#fff" />
+          <path
+            d="M124.8 33c1.2 1-.3-.2 0 0ZM124.5 39.7c0-.1 0-.1 0 0l.1-.1c-.1 0-.1.1-.1.1ZM118.2 42.1c.1.1.3.3 0 0-2.9-2.2-6.3-1.6-8.5 1.1l-3 3.6c.4.5.8-.1 1.3.2.4.3 6.2 5.1 6.3 5.4.2.5-.3.5.1.9.2.1 4.5-5.2 4.9-6.2.9-1.8.3-3.7-1.1-5Zm-1.3 6.8c-.2.3 0 .1-.7.7-.3.3-6.4-4.7-6.2-4.9.8-.9 2.6-1.6 3.6-1.3 2.2.5 5.2 3.2 3.3 5.5Z"
+            fill="#fff" />
+        </g>
+      </svg>
     </a>
     <nav class="main-nav main-nav--closed main-nav--nojs">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
-        <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--current">
-            <a>
+        <ul class="main-nav__list main-nav__list--opened">
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--current">
               Главная
             </a>
           </li>
           <li class="main-nav__item">
-            <a href="catalog.html">
+            <a class="main-nav__link" href="catalog.html">
               Фото и видео
             </a>
           </li>
           <li class="main-nav__item">
-            <a href="form.html">
+            <a class="main-nav__link" href="form.html">
               Форма отзыва
             </a>
           </li>
           <li class="main-nav__item">
-            <a href="https://htmlacademy.ru">
+            <a class="main-nav__link" href="https://htmlacademy.ru">
               HTML Academy
             </a>
           </li>
@@ -49,13 +80,15 @@
     </nav>
     <section class="about">
       <picture>
-        <source media="(min-width: 1280px)" srcset="img/back-desktop.jpg 1x, img/back-desktop@2x.jpg 2x">
-        <source media="(min-width: 768px)" srcset="img/back-tablet.jpg 1x, img/back-tablet@2x.jpg 2x">
-        <img class="about__back" src="img/back-mobile.jpg" srcset="img/back-mobile@2x.jpg 2x" alt="Фон с горами">
+        <source media="(min-width: 1280px)" srcset="img/intro-desktop.jpg 1x, img/intro-desktop@2x.jpg 2x">
+        <source media="(min-width: 768px)" srcset="img/intro-tablet.jpg 1x, img/intro-tablet@2x.jpg 2x">
+        <img class="about__back" src="img/intro-mobile.jpg" srcset="img/intro-mobile@2x.jpg 2x" alt="Фон с горами">
       </picture>
-      <img class="about__back-text" src="img/text-index.svg" width="282" height="214" alt="Добро пожаловать в Седону">
-      <div class="about__wrapper">
-        <h1 class="about__title">Седона &#8212 небольшой городок в Аризоне,<br> заслуживающий большего!</h1>
+      <svg class="about__back-text" width="282" height="214" role="img" aria-label="Добро пожаловать в Седону">
+        <use xlink:href="../img/sprites.svg#text-index"></use>
+      </svg>
+      <div class="about__wrapper about__wrapper--index">
+        <h1 class="about__title">Седона &#8212; небольшой городок в Аризоне,<br> заслуживающий&nbsp;большего!</h1>
         <p class="about__lead">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
       </div>
     </section>
@@ -69,11 +102,17 @@
             <div class="advantages__city">
               <div class="advantages__city-text">
                 <h3 class="advantages__title">Настоящий городок</h3>
-                <span class="advantages__number">&#8212 №1 &#8212</span>
+                <span class="advantages__number">&#8212; №1 &#8212;</span>
                 <p class="advantages__description">Седона не аттракицон для туристов, там течет своя жизнь</p>
               </div>
               <div class="advantages__city-image">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1280px)"
+                    srcset="img/city-desktop.webp 1x, img/city-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/city-tablet.webp 1x, img/city-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/city-mobile.webp 1x, img/city-mobile@2x.webp 2x">
+
                   <source media="(min-width: 1280px)" srcset="img/city-desktop.jpg 1x, img/city-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/city-tablet.jpg 1x, img/city-tablet@2x.jpg 2x">
                   <img class="advantages__image" src="img/city-mobile.jpg" srcset="img/city-mobile@2x.jpg 2x"
@@ -85,14 +124,25 @@
               <li class="features__item features__item--house">
                 <h4 class="features__title">Жилье</h4>
                 <p class="features__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                <svg class="features__icon-house" width="39" height="37">
+                  <use xlink:href="../img/sprites.svg#icon-house"></use>
+                </svg>
               </li>
-              <li class="features__item features__item--souvenirs">
+              <li class="features__item features__item--gift">
                 <h4 class="features__title">Сувениры</h4>
-                <p class="features__description">Не только китайского, но и местного производства!</p>
+                <p class="features__description features__description--gift">Не только китайского, но и местного
+                  производства!</p>
+                <svg class="features__icon-gift" width="32" height="38">
+                  <use xlink:href="../img/sprites.svg#icon-gift"></use>
+                </svg>
               </li>
-              <li class="features__item features__item--food">
+              <li class="features__item features__item--burger">
                 <h4 class="features__title">Еда</h4>
-                <p class="features__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                <p class="features__description features__description--burger">Всегда заказывайте фирменный бургер, вы
+                  не разочаруетесь!</p>
+                <svg class="features__icon-burger" width="40" height="35">
+                  <use xlink:href="../img/sprites.svg#icon-burger"></use>
+                </svg>
               </li>
             </ul>
           </li>
@@ -100,11 +150,17 @@
             <div class="advantages__bridge">
               <div class="advantages__bridge-text">
                 <h3 class="advantages__title">Там есть мост дьявола</h3>
-                <span class="advantages__number">&#8212 №2 &#8212</span>
-                <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+                <span class="advantages__number">&#8212; №2 &#8212;</span>
+                <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь,&nbsp;конечно</p>
               </div>
               <div class="advantages__bridge-image">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1280px)"
+                    srcset="img/bridge-desktop.webp 1x, img/bridge-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/bridge-tablet.webp 1x, img/bridge-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/bridge-mobile.webp 1x, img/bridge-mobile@2x.webp 2x">
+
                   <source media="(min-width: 1280px)" srcset="img/bridge-desktop.jpg 1x, img/bridge-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/bridge-tablet.jpg 1x, img/bridge-tablet@2x.jpg 2x">
                   <img class="advantages__image" src="img/bridge-mobile.jpg" srcset="img/bridge-mobile@2x.jpg 2x"
@@ -114,18 +170,18 @@
             </div>
           </li>
           <li class="advantages__item advantages__item--grey">
-            <h3 class="advantages__title">Небольшая площадь</h3>
-            <span class="advantages__number">&#8212 №3 &#8212</span>
+            <h3 class="advantages__title advantages__title--grey">Небольшая площадь</h3>
+            <span class="advantages__number">&#8212; №3 &#8212;</span>
             <p class="advantages__description">Все интересные места находятся очень близко</p>
           </li>
           <li class="advantages__item advantages__item--grey">
-            <h3 class="advantages__title">Красивая дорога</h3>
-            <span class="advantages__number">&#8212 №4 &#8212</span>
+            <h3 class="advantages__title advantages__title--grey">Красивая дорога</h3>
+            <span class="advantages__number">&#8212; №4 &#8212;</span>
             <p class="advantages__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
           <li class="advantages__item advantages__item--grey">
-            <h3 class="advantages__title">Мало туристов</h3>
-            <span class="advantages__number">&#8212 №5 &#8212</span>
+            <h3 class="advantages__title advantages__title--grey">Мало туристов</h3>
+            <span class="advantages__number">&#8212; №5 &#8212;</span>
             <p class="advantages__description">Большинство едет в Гранд-Каньон и толпится там</p>
           </li>
         </ol>
@@ -139,6 +195,11 @@
         <a class="booking__search button" href="">Найти гостиницу</a>
       </div>
       <picture>
+        <source type="image/webp" media="(min-width: 1280px)"
+          srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x">
+        <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x">
+        <source type="image/webp" srcset="img/map-mobile.webp 1x, img/map-mobile@2x.webp 2x">
+
         <source media="(min-width: 1280px)" srcset="img/map-desktop.jpg 1x, img/map-desktop@2x.jpg 2x">
         <source media="(min-width: 768px)" srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x">
         <img class="booking__map-image" src="img/map-mobile.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Карта">
@@ -153,20 +214,46 @@
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="">Вконтакте</a>
+            <a class="social__link social__link--twitter" href="">
+              <span class="visually-hidden">Твиттер</span>
+              <svg role="img" aria-label="Логотип Твиттер" width="18" height="15" viewBox="0 0 18 15" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path class="social__path"
+                  d="M11.3.2c1.7-.5 3.1.2 3.7 1l2.1-.6c0 .8-.5 1.5-.9 1.7.7.2 1.3-.5 1.3-.5a3 3 0 0 1-1.6 2c-.2 6.6-3.3 11-10.4 10.8H5c-.4 0-4.3-.4-5-1.8 2.3.2 4-.4 4.8-1.1-1-.3-2.8-.5-3.1-3 .4.2.6.3 1.3.2C1.8 8 .4 7.4.5 5.2c.3.3 1.1.5 1.4.5-.7-.2-2-3.3-.9-4.8 1.9 1.8 3.8 3.5 7.4 3.7C8.5 2.3 9.5.8 11.3.2Z"
+                  fill="#fff" />
+              </svg>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="">Фейсбук</a>
+            <a class="social__link social__link--facebook" href="">
+              <span class="visually-hidden">Фейсбук</span>
+              <svg role="img" aria-label="Логотип Фейсбук" width="9" height="19" viewBox="0 0 9 19" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path class="social__path"
+                  d="M6.3 3.4h2.4V0H5.8C2.7.2 1.5 2.4 1.9 6.1H0v3.5h2v9.3h3.8V9.6h2.9V6.1H5.8c0-1 0-2.4.5-2.7Z"
+                  fill="#fff" />
+              </svg>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--instagram" href="">Инстаграм</a>
+            <a class="social__link social__link--youtube" href="">
+              <span class="visually-hidden">Ютуб</span>
+              <svg role="img" aria-label="Логотип Ютуб" width="20" height="14" viewBox="0 0 20 14" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path class="social__path"
+                  d="M17.1 0H2.8A2.9 2.9 0 0 0 0 2.8v8.3C0 12.7 1.3 14 2.8 14h14.3c1.6 0 2.8-1.3 2.8-2.8V2.8C20 1.3 18.7 0 17.1 0ZM7 10.4V3.6L13.8 7 7 10.4Z"
+                  fill="#fff" />
+              </svg>
+            </a>
           </li>
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
         <p class="copyright__text">Разработано:</p>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="copyright__image" src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
+          <svg class="copyright__icon-academy" width="27" height="34">
+            <use xlink:href="../img/sprites.svg#icon-academy"></use>
+          </svg>
         </a>
       </div>
     </div>

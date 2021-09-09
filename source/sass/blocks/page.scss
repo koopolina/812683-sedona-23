@@ -11,4 +11,10 @@
   margin: 0;
   background-color: $white;
   color: $black;
+  text-align: center;
+
+  @media (min-width: $desktop-width) {
+    padding: 0 40px 0 40px;
+    background: linear-gradient(90deg, $grey 2%, $black 11%, $black 89%, $grey 98%);
+  }
 }

@@ -1,21 +1,43 @@
 .booking {
-  margin-bottom: 39px;
+  @media (min-width: $desktop-width) {
+    padding-top: 58px;
+    background-color: $white;
+  }
 }
 
 .booking__title {
   font-size: 21px;
   line-height: 26px;
   margin: 0;
-  padding-bottom: 20px;
+  padding-bottom: 21px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    padding-bottom: 30px;
+  }
 }
 
 .booking__text {
   margin: 0;
-  padding-bottom: 27px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 28px;
   font-size: 14px;
   line-height: 24px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 22%;
+    padding-left: 22%;
+    padding-bottom: 39px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 32%;
+    padding-left: 32%;
+    padding-bottom: 45px;
+  }
 }
 
 .booking__map-image {
@@ -26,9 +48,40 @@
   @media (min-width: $tablet-width) {
     padding: 0 27px 0 32px;
   }
+}
+
+.booking__search {
+  display: inline-block;
+  width: 280px;
+  margin-bottom: 49px;
+  padding-top: 15px;
+  padding-bottom: 18px;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  color: $white;
+  text-decoration: none;
+  background-color: $blue;
+
+  &:hover {
+    background-color: $hoverblue;
+  }
+
+  &:active {
+    color: rgba($white, 0.3);
+    background-color: $activeblue;
+  }
+
+  &:disabled {
+    background-color: $grey;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 458px;
+    margin-bottom: 57px;
+  }
 
   @media (min-width: $desktop-width) {
-    margin: auto;
-    max-width: 1072px;
+    margin-bottom: 65px;
   }
 }
