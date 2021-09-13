@@ -194,7 +194,6 @@
 
 .main-nav__item:last-child {
   @media (max-width: $mobile-width-only) {
-    // background: linear-gradient(0deg, rgba($darkgrey, 0.7) 1%, rgba($blue,1) 15%);
     box-shadow: 0 -5px 10px -5px rgba($darkgrey, 1) inset;
   }
 }
