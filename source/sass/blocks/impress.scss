@@ -1,0 +1,131 @@
+.impress-info::before {
+  content: "";
+  position: relative;
+  top: -85px;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: $grey;
+
+  @media (min-width: $tablet-width) {
+    transform: rotate(90deg);
+    top: 50px;
+    left: 178px;
+    width: 90%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 60%;
+    left: 336px;
+  }
+}
+
+.impress-info {
+  margin-bottom: 13px;
+  padding: 0;
+  text-align: left;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+}
+
+.impress-info__legend {
+  padding: 0;
+  margin-bottom: 36px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 72px;
+    padding-right: 20px;
+    text-align: left;
+    font-size: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 76px;
+    margin-bottom: 72px;
+  }
+}
+
+.impress-info__label {
+  position: relative;
+  padding-left: 77px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: none;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 76px;
+  }
+}
+
+.impress-info__input:hover + .impress-info__label::before {
+  background-color: $grey;
+}
+
+.impress-info__input:active + .impress-info__label::before {
+  background-color: $activegrey;
+}
+
+.impress-info__input + .impress-info__label::before {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: -1px;
+  width: 55px;
+  height: 55px;
+  background: $palegrey;
+  border-radius: 30px;
+}
+
+.impress-info__input:checked:hover + .impress-info__label::before {
+  background-color: $grey;
+}
+
+.impress-info__input:checked + .impress-info__label::before {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: -1px;
+  width: 55px;
+  height: 55px;
+  background: $palegrey;
+  border-radius: 30px;
+}
+
+.impress-info__input:checked + .impress-info__label::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: 17px;
+  width: 20px;
+  height: 20px;
+  background: $darkgrey;
+  border-radius: 20px;
+}
+
+.impress-info__input:checked:active + .impress-info__label::after {
+  background: rgba($darkgrey, 0.3);
+}
+
+.impress-info__radio {
+  margin-bottom: 43px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 52px;
+  }
+}

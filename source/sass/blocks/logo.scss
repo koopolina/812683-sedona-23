@@ -1,0 +1,32 @@
+.logo {
+  position: absolute;
+  left: calc(50% - 95px);
+  z-index: 1;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    left: calc(50% - 95px);
+    z-index: 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 97px;
+  }
+}
+
+.logo__outline {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.logo__clouds {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}

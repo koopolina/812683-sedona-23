@@ -20,6 +20,7 @@
     font-size: 21px;
     padding-top: 36px;
     padding-right: 9px;
+    padding-bottom: 32px;
   }
 
   @media (min-width: $desktop-width) {
@@ -162,7 +163,7 @@
   }
 }
 
-.inner-text {
+.about__inner-text {
   display: none;
 }
 
