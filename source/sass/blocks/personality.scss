@@ -1,0 +1,97 @@
+.personality-info::before {
+  content: "";
+  position: relative;
+  top: -43px;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: $grey;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.personality-info {
+  border: none;
+  padding: 0;
+  text-align: left;
+
+  @media (min-width: $tablet-width) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    padding-left: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 77px;
+  }
+}
+
+.personality-info__legend {
+  padding-top: 2px;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: bold;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 55px;
+    font-size: 21px;
+    text-align: left;
+  }
+}
+
+.personality-info__label {
+  padding-top: 40px;
+  padding-right: 13px;
+  font-size: 14px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 20px;
+  }
+}
+
+.personality-info__input {
+  display: inline-block;
+  width: 100%;
+  height: 58px;
+  margin-top: 20px;
+  padding-top: 24px;
+  padding-bottom: 19px;
+  padding-left: 22px;
+  font-size: 16px;
+  background-color: $palegrey;
+  border: none;
+  box-sizing: border-box;
+
+  &:hover {
+    background-color: $grey;
+  }
+
+  &:focus,
+  &:active {
+    background-color: $white;
+    outline: 4px solid $grey;
+    outline-offset: -5px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+}
+
+.personality-info__input::placeholder {
+  font-family: $font-stack;
+  font-size: 16px;
+  font-weight: bold;
+  color: $black;
+  letter-spacing: 1px;
+}
+
+.personality-info__item {
+  display: flex;
+}
