@@ -1,5 +1,5 @@
 .presentation {
-  padding-top: 30px;
+  padding-top: 32px;
   margin-bottom: 105px;
 
   @media (min-width: $tablet-width) {
@@ -42,7 +42,7 @@
 }
 
 .presentation__description {
-  padding-bottom: 18px;
+  padding-bottom: 19px;
   padding-left: 40px;
   padding-right: 40px;
   font-size: 14px;
@@ -52,7 +52,7 @@
   @media (min-width: $tablet-width) {
     padding-left: 100px;
     padding-right: 100px;
-    padding-bottom: 63px;
+    padding-bottom: 65px;
   }
 
   @media (min-width: $desktop-width) {
@@ -123,91 +123,3 @@
     left: 205px;
   }
 }
-
-// .elements__item {
-//   position: relative;
-
-//   @media (min-width: $desktop-width) {
-//     padding-left: 1;
-//     padding-right: 1;
-//     width: 100%;
-//   }
-// }
-
-// .elements__item::after {
-//   content: "";
-//   position: absolute;
-//   z-index: -1;
-//   height: 80px;
-//   top: 0;
-//   bottom: 0;
-//   left: 6%;
-//   right: 6%;
-//   margin: auto;
-//   background-color: $palegrey;
-
-//   @media (min-width: $tablet-width) {
-//     display: none;
-//   }
-// }
-
-// .elements__action-replay {
-//   position: absolute;
-//   left: 14%;
-
-//   @media (min-width: $tablet-width) {
-//     bottom: 65px;
-//     left: 5%;
-//   }
-
-//   @media (min-width: $desktop-width) {
-//     bottom: 48px;
-//     left: 4%;
-//   }
-// }
-
-// .elements__action-subtitles {
-//   position: absolute;
-//   right: 30%;
-
-//   @media (min-width: $tablet-width) {
-//     bottom: 65px;
-//     right: 14%;
-//   }
-
-//   @media (min-width: $desktop-width) {
-//     bottom: 47px;
-//     right: 12%;
-//   }
-// }
-
-// .elements__action-fullscreen {
-//   position: absolute;
-//   right: 14%;
-
-//   @media (min-width: $tablet-width) {
-//     bottom: 65px;
-//     right: 6%;
-//   }
-
-//   @media (min-width: $desktop-width) {
-//     bottom: 47px;
-//     right: 5%;
-//   }
-// }
-
-// .elements__action-replay:hover,
-// .elements__action-subtitles:hover,
-// .elements__action-fullscreen:hover {
-//   @media (min-width: $tablet-width) {
-//     opacity: 60%;
-//   }
-// }
-
-// .elements__action-replay:active,
-// .elements__action-subtitles:active,
-// .elements__action-fullscreen:active {
-//   @media (min-width: $tablet-width) {
-//     opacity: 30%;
-//   }
-// }

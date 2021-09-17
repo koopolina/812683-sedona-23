@@ -3,11 +3,11 @@
   margin-bottom: 9px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 49px;
+    margin-top: 51px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 45px;
+    padding-top: 43px;
     margin-top: 0;
     margin-bottom: 0;
     background-color: $white;
@@ -63,7 +63,7 @@
 }
 
 .gallery__item {
-  padding-bottom: 38px;
+  padding-bottom: 39px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 6px;

@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Седона</title>
-  <link rel="preload" href="../fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="../fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link href="css/style.min.css" rel="stylesheet">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/icon.svg" type="image/svg+xml">
@@ -81,14 +81,11 @@
       </div>
     </nav>
     <section class="about">
-      <picture>
-        <source media="(min-width: 1280px)" srcset="img/intro-desktop.jpg 1x, img/intro-desktop@2x.jpg 2x">
-        <source media="(min-width: 768px)" srcset="img/intro-tablet.jpg 1x, img/intro-tablet@2x.jpg 2x">
-        <img class="about__back" src="img/intro-mobile.jpg" srcset="img/intro-mobile@2x.jpg 2x" alt="Фон с горами">
-      </picture>
-      <svg class="about__back-text" width="282" height="214" role="img" aria-label="Добро пожаловать в Седону">
-        <use xlink:href="../img/sprite.svg#text-index"></use>
-      </svg>
+      <div class="about__container">
+        <svg class="about__back-text" width="282" height="214" role="img" aria-label="Добро пожаловать в Седону">
+          <use xlink:href="../img/sprite.svg#text-index"></use>
+        </svg>
+      </div>
       <div class="about__wrapper about__wrapper--index">
         <h1 class="about__title">Седона &#8212; небольшой городок в Аризоне,<br> заслуживающий&nbsp;большего!</h1>
         <p class="about__lead">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
@@ -124,27 +121,29 @@
                 </a>
               </div>
             </div>
-            <ul class="features__list">
-              <li class="features__item features__item--house">
-                <h4 class="features__title">Жилье</h4>
-                <p class="features__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-                <svg class="features__icon-house" width="39" height="37">
+            <ul class="advantages__list-two">
+              <li class="advantages__item-two advantages__item-two--house">
+                <h4 class="advantages__title-two">Жилье</h4>
+                <p class="advantages__description-two">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                <svg class="advantages__icon-house" width="39" height="37">
                   <use xlink:href="../img/sprite.svg#icon-house"></use>
                 </svg>
               </li>
-              <li class="features__item features__item--gift">
-                <h4 class="features__title">Сувениры</h4>
-                <p class="features__description features__description--gift">Не только китайского, но и местного
+              <li class="advantages__item-two advantages__item-two--gift">
+                <h4 class="advantages__title-two">Сувениры</h4>
+                <p class="advantages__description-two advantages__description-two--gift">Не только китайского, но и
+                  местного
                   производства!</p>
-                <svg class="features__icon-gift" width="32" height="38">
+                <svg class="advantages__icon-gift" width="32" height="38">
                   <use xlink:href="../img/sprite.svg#icon-gift"></use>
                 </svg>
               </li>
-              <li class="features__item features__item--burger">
-                <h4 class="features__title">Еда</h4>
-                <p class="features__description features__description--burger">Всегда заказывайте фирменный бургер, вы
+              <li class="advantages__item-two advantages__item-two--burger">
+                <h4 class="advantages__title-two">Еда</h4>
+                <p class="advantages__description-two advantages__description-two--burger">Всегда заказывайте фирменный
+                  бургер, вы
                   не разочаруетесь!</p>
-                <svg class="features__icon-burger" width="40" height="35">
+                <svg class="advantages__icon-burger" width="40" height="35">
                   <use xlink:href="../img/sprite.svg#icon-burger"></use>
                 </svg>
               </li>

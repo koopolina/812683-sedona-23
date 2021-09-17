@@ -14,7 +14,9 @@
   text-align: center;
 
   @media (min-width: $desktop-width) {
-    padding: 0 40px 0 40px;
-    background: linear-gradient(90deg, $grey 2%, $black 11%, $black 89%, $grey 98%);
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: $grey;
+    box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
   }
 }
